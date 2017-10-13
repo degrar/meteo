@@ -1,0 +1,198 @@
+@import 'variables';
+@import 'mixins';
+
+#contact_us {
+    position: relative;
+    span {
+        display: block;
+    }
+    .title {
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 3.5vh;
+        color: #1e252b;
+    }
+    .contact_us_container {
+        position: absolute;
+        top: 18vh;
+        left: 5vw;
+        width: 90vw;
+        @media #{$tablet}{
+            width: 40vw; 
+            top: 14vh;
+        }        
+    }
+    .separation_line {
+        float: left;
+        margin-top: 6vh;
+        width: 6vw;
+        margin-bottom: 6.8vh;
+    }
+    .located_at {
+        clear:both;
+        width: 50%;
+        float: left;
+    }
+    .contact_data {
+        width: 50%;
+        float: left;
+    }
+    .clboth {
+        clear:both;
+    }
+    .form_title {
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 2vh;
+        color: #1e252b;
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    }
+    form {
+        clear: both;
+        label {
+            display: block;
+            font-family: 'OpenSans', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            font-size: 1.5vh;
+            color: #1e252b;
+            margin-top: 0.3vh;
+            padding-top: 0.3vh;
+            a {
+                color: #a89f88;
+            }
+        }
+        input[type="text"] {
+            display: block;
+            font-family: 'OpenSans', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: calc;
+            border: 1px solid #a89f88;
+            color: #a89f88;
+            width: 100%;
+            padding: 0.8vh;
+            margin-bottom: 0.7vh;
+            font-size: 1.7vh;
+        }
+        textarea {
+            display: block;
+            font-family: 'OpenSans', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: calc;
+            border: 1px solid #a89f88;
+            color: #a89f88;
+            width: 100%;
+            padding: 1vh;
+            margin-bottom: 0.7vh;
+            resize: none;
+            height: 12.7vh;
+            font-size: 1.7vh;
+        }
+        
+    }
+}
+
+#contact_us .located_at .title, #contact_us .contact_data .title {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 1.7vh;
+    color: #1e252b;
+    margin-bottom: 1vh;
+}
+
+#contact_us .located_at span, #contact_us .contact_data span, #contact_us .contact_data a {
+    display: block;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    line-height: 2.3vh;
+    font-size: 1.6vh;
+    color: #1e252b;
+    text-decoration: none;
+}
+
+#contact_us{
+    .contact_data{
+        padding-left: 5vw;
+        @media #{$tablet}{ 
+            padding-left: 0vw;
+        }
+    }
+}
+
+#contact_us form input[type="checkbox"] {
+    border: 1px solid #a89f88;
+}
+
+#contact_us form input[type="submit"] {
+    cursor: pointer;
+    float: left;
+    width: 13vh;
+    height: 4vh;
+    color: #1e252b;
+    border: 1px solid #1e252b;
+    display: block;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 2vh;
+    color: #1e252b;
+    margin-top: 3.3vh;
+    padding-top: 0.3vh;
+    &:hover {
+        background-color: #1e252b;
+        color:white;
+    }
+    @media #{$tablet}{ 
+        float: right;
+        margin-top: 0.3vh;
+        width: 15%;
+        font-size: 1.4vh;
+    }
+}
+
+#contact_us form .validation_error {
+    border: 1px solid red !important;
+}
+
+.privacy_policy{
+    margin-top: 0.8vh;
+    .label {
+        color: #a89f88;
+        font-size: 1.3vh;
+    }
+}

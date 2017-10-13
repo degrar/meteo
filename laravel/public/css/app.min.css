@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+body,html{min-height:100vh;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+header{display:block;position:fixed;top:0;left:0;width:100%;z-index:1000}
+header figure,header nav{display:inline-block}
+header .main_menu{position:absolute;right:20px;top:20px}
+*,:after,:before{box-sizing:border-box}
+a{cursor:pointer}
+section{height:100vh}
+.section2{float:left;width:50%}
+.section3{float:left;width:50%;height:100vh;background-color:#000}
+.section4,.section5{float:left;width:100%}
+footer.footer{width:100vw;background-color:#a89f88;display:block}
