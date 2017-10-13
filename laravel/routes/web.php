@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/about', function (){
+
+    $tasks = [
+        'Start',
+        'Middle',
+        'End'
+    ];
+
+    return view('about', compact('tasks'));
+});
