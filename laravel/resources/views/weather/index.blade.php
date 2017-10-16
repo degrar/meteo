@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Current Weather</title>
-</head>
-<body>
+@include('layouts.header')
+
 <ul>
     @foreach( $current_weather as $weather )
         <li>
@@ -11,5 +7,4 @@
         </li>
     @endforeach
 </ul>
-</body>
-</html>
+@include('layouts.footer')

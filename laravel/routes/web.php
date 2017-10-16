@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 Route::get('/current_weather', 'WeatherController@index');
 Route::get('/current_weather/{id}', 'WeatherController@show');
+
+
+Route::get('/','PostsController@index');
