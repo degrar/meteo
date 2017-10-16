@@ -16,13 +16,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/about', function (){
-
-    $tasks = [
-        'Start',
-        'Middle',
-        'End'
-    ];
-
-    return view('about', compact('tasks'));
-});
+Route::get('/current_weather', 'WeatherController@index');
+Route::get('/current_weather/{id}', 'WeatherController@show');
