@@ -178,6 +178,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        /*
+         * Google Charts...
+         */
+        //Scopdrag\LaravelGoogleChart\LaravelGoogleChartServiceProvider::class,
+
     ],
 
     /*

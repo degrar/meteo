@@ -11,11 +11,5 @@
 |
 */
 
-
-
-
-Route::get('/current_weather', 'WeatherController@index');
-Route::get('/current_weather/{id}', 'WeatherController@show');
-
-
-Route::get('/','PostsController@index');
+Route::get('/', 'WeatherController@googleLineChart');
+Route::get('/{id}', 'WeatherController@show');
