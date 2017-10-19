@@ -31,8 +31,15 @@ class WeatherController extends Controller
             ->limit(1000)
             ->get();
 
-        return view('pages.index',compact('current_weather'));
+        $weather_day = DB::table('day')
+            ->orderBy('id', 'desc')
+            ->limit(1000)
+            ->get();
+
+        return view('pages.index', ['current_weather' => $current_weather,'weather_day' => $weather_day]);
+
     }
+
 
 
 
